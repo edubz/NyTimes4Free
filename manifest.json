@@ -1,0 +1,20 @@
+{
+
+  "manifest_version": 2,
+  "name": "NY Times For Free",
+  "version": "1.2",
+
+  "description": "Allows you to read NY Times articles for free without a subscription",
+
+  "icons": {
+    "48": "border-48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.nytimes.com/*"],
+      "js": ["ny4free.js"]
+    }
+  ]
+
+}
